@@ -1,0 +1,31 @@
+{% extends "commonuser.html" %}
+{% block content %}
+<div class="container"><div class="row"><div class="col col-12 col-sm-6 col-md-8 col-lg-10 col-xl-12 col-xxl-12">
+    <form action="/userpage" method="post"><table class="table">
+        <tr>
+            <td>Email-Id</td>
+            <td><input type="text" name="email" id="" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="pass" id="" class="form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" class="btn btn-success">Login</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="/register">Not having a account</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="/complaint">Giving complaint without login </a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="/">Admin page</a></td>
+        </tr>
+    </table></form>
+</div></div></div>
+{% endblock %}
